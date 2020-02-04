@@ -15,24 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-4w-dpd">
-                                <rect key="frame" x="73" y="101" width="269" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-4w-dpd">
+                                <rect key="frame" x="73" y="101" width="268" height="199"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-oL-ZO4">
-                                <rect key="frame" x="183" y="433" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-oL-ZO4" userLabel="Red Switch">
+                                <rect key="frame" x="184.5" y="432.5" width="51" height="31"/>
                                 <connections>
-                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iCw-6K-Jtl"/>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="41b-XY-wuJ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-Bk-fdK" userLabel="Blue Switch">
+                                <rect key="frame" x="182.5" y="543" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uMc-sj-UJA"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUd-lH-49v" userLabel="Green Switch">
+                                <rect key="frame" x="182.5" y="486.5" width="51" height="31.5"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="gU9-lP-EsQ"/>
                                 </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DLZ-Bk-fdK" firstAttribute="centerX" secondItem="qe6-4w-dpd" secondAttribute="centerX" id="92Y-P7-TS6"/>
+                            <constraint firstItem="Hdc-oL-ZO4" firstAttribute="leading" secondItem="DLZ-Bk-fdK" secondAttribute="trailing" constant="-47" id="9Gz-wi-0nL"/>
+                            <constraint firstAttribute="bottom" secondItem="qe6-4w-dpd" secondAttribute="bottom" constant="596" id="RRV-kD-9nj"/>
+                            <constraint firstItem="Hdc-oL-ZO4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XXh-Rn-nUo"/>
+                            <constraint firstItem="qe6-4w-dpd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="c6B-kG-WWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DLZ-Bk-fdK" secondAttribute="bottom" constant="288" id="glM-Mj-apE"/>
+                            <constraint firstItem="PUd-lH-49v" firstAttribute="top" secondItem="Hdc-oL-ZO4" secondAttribute="bottom" constant="23" id="jDE-hc-DkJ"/>
+                            <constraint firstItem="DLZ-Bk-fdK" firstAttribute="leading" secondItem="PUd-lH-49v" secondAttribute="leading" id="mSn-f5-SMk"/>
+                            <constraint firstItem="DLZ-Bk-fdK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oI0-em-WqU"/>
+                            <constraint firstItem="qe6-4w-dpd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="rWX-i2-1cf"/>
+                            <constraint firstItem="DLZ-Bk-fdK" firstAttribute="top" secondItem="PUd-lH-49v" secondAttribute="bottom" constant="25" id="yTW-Zt-NLS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueSwtich" destination="DLZ-Bk-fdK" id="pdw-aU-Bbd"/>
                         <outlet property="colorView" destination="qe6-4w-dpd" id="bPV-NV-kBJ"/>
+                        <outlet property="greenSwtich" destination="PUd-lH-49v" id="Q0W-Kl-okf"/>
+                        <outlet property="redSwitch" destination="Hdc-oL-ZO4" id="e9L-c3-gX7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
