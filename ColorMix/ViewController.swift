@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSwtich: UISwitch!
     @IBOutlet weak var blueSwtich: UISwitch!
     
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setColor()
@@ -26,10 +30,14 @@ class ViewController: UIViewController {
         setColor()
     }
     
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        setColor()
+    }
+    
     func setColor() {
-        let red: CGFloat = redSwitch.isOn ? 1 : 0
-        let green: CGFloat = greenSwtich.isOn ? 1 : 0
-        let blue: CGFloat = blueSwtich.isOn ? 1 : 0
+        let red: CGFloat = redSwitch.isOn ? CGFloat(redSlider.value) : 0
+        let green: CGFloat = greenSwtich.isOn ? CGFloat(greenSlider.value) : 0
+        let blue: CGFloat = blueSwtich.isOn ? CGFloat(blueSlider.value) : 0
         
         let color = UIColor(displayP3Red: red, green: green, blue: blue, alpha: 1)
         colorView.backgroundColor = color
