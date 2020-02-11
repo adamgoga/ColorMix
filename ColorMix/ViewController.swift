@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    @IBOutlet weak var colorView: UIView!
-
     @IBOutlet weak var redSwitch: UISwitch!
     @IBOutlet weak var greenSwtich: UISwitch!
     @IBOutlet weak var blueSwtich: UISwitch!
@@ -40,7 +38,7 @@ class ViewController: UIViewController {
         let blue: CGFloat = blueSwtich.isOn ? CGFloat(blueSlider.value) : 0
         
         let color = UIColor(displayP3Red: red, green: green, blue: blue, alpha: 1)
-        colorView.backgroundColor = color
+        self.view.backgroundColor = color
         
     }
 }

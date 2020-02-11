@@ -15,11 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-4w-dpd">
-                                <rect key="frame" x="26" y="91" width="363" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-oL-ZO4" userLabel="Red Switch">
                                 <rect key="frame" x="26" y="609" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,7 +64,6 @@
                     <connections>
                         <outlet property="blueSlider" destination="NrJ-lb-VGp" id="3I4-Dd-WnC"/>
                         <outlet property="blueSwtich" destination="DLZ-Bk-fdK" id="pdw-aU-Bbd"/>
-                        <outlet property="colorView" destination="qe6-4w-dpd" id="bPV-NV-kBJ"/>
                         <outlet property="greenSlider" destination="HBL-lr-usz" id="P2T-IG-eTb"/>
                         <outlet property="greenSwtich" destination="PUd-lH-49v" id="Q0W-Kl-okf"/>
                         <outlet property="redSlider" destination="TG4-IW-6HG" id="IIE-t5-q0h"/>
