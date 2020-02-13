@@ -57,15 +57,39 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qwQ-uo-I8n"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-Qe-iCK">
+                                <rect key="frame" x="275" y="648" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys4-2b-Z5q">
+                                <rect key="frame" x="275" y="753" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnM-5D-Eeh">
+                                <rect key="frame" x="275" y="697" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="ys4-2b-Z5q" id="BJE-qa-ZFc"/>
                         <outlet property="blueSlider" destination="NrJ-lb-VGp" id="3I4-Dd-WnC"/>
-                        <outlet property="blueSwtich" destination="DLZ-Bk-fdK" id="pdw-aU-Bbd"/>
+                        <outlet property="blueSwitch" destination="DLZ-Bk-fdK" id="pdw-aU-Bbd"/>
+                        <outlet property="greenLabel" destination="hnM-5D-Eeh" id="wHH-8S-6pd"/>
                         <outlet property="greenSlider" destination="HBL-lr-usz" id="P2T-IG-eTb"/>
-                        <outlet property="greenSwtich" destination="PUd-lH-49v" id="Q0W-Kl-okf"/>
+                        <outlet property="greenSwitch" destination="PUd-lH-49v" id="Q0W-Kl-okf"/>
+                        <outlet property="redLabel" destination="dPh-Qe-iCK" id="JWR-Hd-jOb"/>
                         <outlet property="redSlider" destination="TG4-IW-6HG" id="IIE-t5-q0h"/>
                         <outlet property="redSwitch" destination="Hdc-oL-ZO4" id="e9L-c3-gX7"/>
                     </connections>
